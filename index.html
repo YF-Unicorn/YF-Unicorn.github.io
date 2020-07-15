@@ -2,16 +2,87 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Project: Travel webpage</title>
+        <title>Books I Read</title>
         <style>
-            
+            body {
+                background-color: rgb(227, 255, 227);
+                font-family: cursive;
+            }
+            #title {
+                text-decoration: underline;
+            }
+            #list {
+                background-color: rgb(191, 255, 195);
+                font-size: 20px;
+                font-family: sans-serif;
+                line-height: 30px;
+            }
+            .story {
+                background-color: rgb(153, 255, 153);
+                font-size: 16px;
+                font-family: serif;
+            }
+            #favorite {
+                background-color: rgb(151, 255, 135);
+                position: fixed;
+                top: 10px;
+                right: 0px;
+                width: 40%;
+                padding: 5px;
+                border: ridge;
+                border-width: 10px;
+                border-color: rgb(0, 232, 15);
+            }
+            #top-3 {
+                background-color: rgb(188, 255, 181);
+            }
+            #footer {
+                background-color: rgb(0, 0, 0);
+                color: green;
+                padding: 7px;
+                padding-left: 150px;
+            }
         </style>
     </head>
     <body>
-    
-        <h1>Books I Read</h1>
+        <h1 id="title">Books I Read:</h1>
+        <ol id="list">
+            <li>Warriors
+                <ul class="story">
+                    <li>The Sight</li>
+                    <li>The Dark River</li>
+                    <li>Firestar's Quest</li>
+                </ul>
+            </li>
+            <li>White Fang
+                <ul class="story">
+                    <li>Call of The wild</li>
+                    <li>White Fang
+                </ul>
+            </li>
+            <li>The Time Machine</li>
+            <li>Green Glass House</li>
+            <li>The Lost Tribe</li>
+            <li>The Secret Lake</li>
+            <li>The Hunger Games Trilogy
+                <ul class="story">
+                    <li>The Hunger Games</li>
+                    <li>Catching Fire</li>
+                    <li>Mockingjay
+                </ul>
+            </li>
+            <li>A Wrinkle In Time</li>
+        </ol>
         
-        <ol>
+        <div id="favorite">
+            <h2>My Top 3 Favorite books:</h2>
+            <ol id="top-3">
+                <li>The Hunger Games</li>
+                <li>A Wrinkle In Time</li>
+                <li>Warriors</li>
+            </ol>
+        </div>
         
+        <p id="footer">Reading Now: <br>Last Updated: 7/15/2020</p>
     </body>
 </html>
