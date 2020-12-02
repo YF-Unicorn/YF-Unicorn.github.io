@@ -23,28 +23,51 @@
                 font-family: serif;
             }
             #favorite {
-                background-color: rgb(151, 255, 135);
+                background-color: green;
                 position: fixed;
                 top: 10px;
                 right: 0px;
-                width: 40%;
+                width: 30%;
                 padding: 5px;
                 border: ridge;
                 border-width: 10px;
                 border-color: rgb(0, 232, 15);
             }
             #top-3 {
-                background-color: rgb(188, 255, 181);
+                background-color: rgb(17, 201, 0);
             }
             #footer {
+                position: sticky;
+                bottom: 0px;
+                right: 0px;
+                width: 75%;
                 background-color: rgb(0, 0, 0);
-                position: fixed;
-                bottom:-16px;
-                width: 100%;
                 color: green;
                 padding: 7px;
-                text-align: center;
-                font-size: 13px;
+                padding-left: 150px;
+            }
+            #paragraph1 {
+                font-size: 15px;
+                text-indent: 50px;
+            }
+            #paragraph2 {
+                font-size: 15px;
+                text-indent: 50px;
+            }
+            #paragraph3 {
+                font-size: 15px;
+                text-indent: 50px;
+            }
+            #paragraph4 {
+                font-size: 15px;
+                text-indent: 50px;
+            }
+            #paragraphs {
+                height: 200px;
+                width: 60%;
+                overflow: auto;
+                background-color: rgb(152, 255, 143);
+                padding: 5px;
             }
         </style>
     </head>
@@ -53,40 +76,58 @@
         <ol id="list">
             <li>Warriors
                 <ul class="story">
-                    <li>The Sight</li>
-                    <li>The Dark River</li>
-                    <li>Firestar's Quest</li>
+                    <li><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FThe_Sight_(Hunter_novel)&psig=AOvVaw1aFakkivom7mKld9of7NY-&ust=1597151917398000&source=images&cd=vfe&ved=0CAkQjhxqFwoTCND7p4HdkOsCFQAAAAAdAAAAABAD">The Sight</a><br><img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/62/PowerofThreebook1.jpg/220px-PowerofThreebook1.jpg" alt="The Sight book cover" width="120px"></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Warriors:_Power_of_Three#Dark_River">Dark River</a><br><img src="https://upload.wikimedia.org/wikipedia/en/1/15/Warriors%2C_Power_of_Three_2%2C_Dark_River%2C_1st_edition_cover.jpg" alt="Dark River book cover" width="120px"></li>
+                    <li><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFirestar%2527s_Quest&psig=AOvVaw30RvB8AaMtS2IoWxT6WZnm&ust=1597152679129000&source=images&cd=vfe&ved=0CAkQjhxqFwoTCKjaq7vfkOsCFQAAAAAdAAAAABAD">Firestar's Quest</a><br><img src="https://upload.wikimedia.org/wikipedia/en/a/af/FirestarsQuest.jpg" alt="Dark River book cover" width="120px"></li>
                 </ul>
             </li>
             <li>White Fang
                 <ul class="story">
-                    <li>Call of The wild</li>
-                    <li>White Fang
+                    <li><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FThe_Call_of_the_Wild&psig=AOvVaw3-dAl4TERkCaId5LQqb3vR&ust=1597152848133000&source=images&cd=vfe&ved=0CAkQjhxqFwoTCICf1Y3gkOsCFQAAAAAdAAAAABAD">Call of The Wild</a><br><img src="https://upload.wikimedia.org/wikipedia/commons/2/26/JackLondoncallwild.jpg" alt="Call of The Wild book cover" width="120px"></li>
+                    <li><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FWhite_Fang&psig=AOvVaw0cffDzMlCRgDi-5Ry7JsYk&ust=1597152974229000&source=images&cd=vfe&ved=0CAkQjhxqFwoTCKDijMvgkOsCFQAAAAAdAAAAABAD">White Fang</a><br><img src="https://upload.wikimedia.org/wikipedia/commons/1/14/JackLondonwhitefang1.jpg" alt="White Fang Book Cover" width="120px"></li>
                 </ul>
             </li>
-            <li>The Time Machine</li>
+            <li><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPortal%3ASpeculative_fiction%2FSelected_science_fiction_work%2F18&psig=AOvVaw0hg6qRxiCuTOgE287U1eTT&ust=1597153184890000&source=images&cd=vfe&ved=0CAkQjhxqFwoTCMCbiKvhkOsCFQAAAAAdAAAAABAZ">The Time Machine</a><br><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Timemachinebook.JPG/150px-Timemachinebook.JPG" alt="The Time Machine book cover" width="120px"></li>
             <li>Green Glass House</li>
             <li>The Lost Tribe</li>
             <li>The Secret Lake</li>
-            <li>The Hunger Games Trilogy
+            <li id="hunger-games">The Hunger Games Trilogy
                 <ul class="story">
-                    <li>The Hunger Games</li>
-                    <li>Catching Fire</li>
-                    <li>Mockingjay
+                    <li><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FThe_Hunger_Games_(novel)&psig=AOvVaw3nXZYC66l1hKc3nGHOdovB&ust=1597153841435000&source=images&cd=vfe&ved=0CAkQjhxqFwoTCJC4iOnjkOsCFQAAAAAdAAAAABAD">The Hunger Games</a><br><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/The_Hunger_Games.jpg/220px-The_Hunger_Games.jpg" alt="The Hunger Games book cover" width="120px"></li>
+                    <li><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCatching_Fire&psig=AOvVaw3nXZYC66l1hKc3nGHOdovB&ust=1597153841435000&source=images&cd=vfe&ved=0CAkQjhxqFwoTCJC4iOnjkOsCFQAAAAAdAAAAABAJ">Catching Fire</a><br><img src="https://upload.wikimedia.org/wikipedia/en/a/a2/Catching_Fire_%28Suzanne_Collins_novel_-_cover_art%29.jpg" alt="Catching Fire book cover" width="120px"></li>
+                    <li><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMockingjay&psig=AOvVaw3nXZYC66l1hKc3nGHOdovB&ust=1597153841435000&source=images&cd=vfe&ved=0CAkQjhxqFwoTCJC4iOnjkOsCFQAAAAAdAAAAABAP">Mockingjay</a><br><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Mockingjay.JPG/220px-Mockingjay.JPG" alt="Mockingjay book cover" width="120px"></li>
                 </ul>
             </li>
-            <li>A Wrinkle In Time</li>
+            <li><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FA_Wrinkle_in_Time_(2018_film)&psig=AOvVaw2_j0HCMnKRPoV2l1JafmRJ&ust=1597154231092000&source=images&cd=vfe&ved=0CAkQjhxqFwoTCLj3gKHlkOsCFQAAAAAdAAAAABAD">A Wrinkle in Time</a><br><img src="https://upload.wikimedia.org/wikipedia/en/a/ab/AWrinkleInTimeTeaser.jpg" alt="A Wrinkle In Time book cover" width="120px"></li>
+            <li><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fzh.wikipedia.org%2Fwiki%2F%25E6%25B0%25B4%25E6%25B5%2592%25E4%25BC%25A0_(2011%25E5%25B9%25B4%25E7%2594%25B5%25E8%25A7%2586%25E5%2589%25A7)&psig=AOvVaw2JWGpNpqwtncykEwyg2Kxl&ust=1597154347383000&source=images&cd=vfe&ved=0CAkQjhxqFwoTCIDSudXlkOsCFQAAAAAdAAAAABA5">水浒传</a><br><img src="https://upload.wikimedia.org/wikipedia/zh/4/47/%E7%94%B5%E8%A7%86%E5%89%A7%E6%B0%B4%E6%B5%92%E4%BC%A02011.jpg" alt="水浒传" width="169px"><br>
+                <div id="paragraphs">
+                <div id="paragraph1">
+                    	I just read a book called Water Margin. It was interesting. I have not yet read a book like this one before because It was not all vernacular.  That made it a little hard to understand the sentences. But after a few days of reading the book, I gradually got used to how the sentences worked. I liked the book.</div>
+	            <div id="paragraph2">
+	This book is about how 108 people gather and lives on a mountain, how they defeated people from the royal court who wanted to arrest them. Then they became soldiers of the royal court. But at last, they got plotted because of all the things they did that were against the royal court. These 108 people each got mistreated by rulers that forced them to leave where they are living.</div>
+	<div id="paragraph3">
+	There were a lot of characters in the book, and my favorite character is Wu Song. He is my favorite character because he is very brave. He fought a tiger that no one could defeat with bare hands. That tiger has killed a lot of hunters, and everyone wanted to kill it. He could also make people's enemies throw up their hands.</div>
+	<div id="paragraph4">
+	The awesome stories from Water Margin will always stay in my heart.
+
+                    
+                </div>
+                </div>
+            </li>
+            <li><a href="https://www.alangratz.com/writing/grenade/">Grenade</a><br><img src="https://www.alangratz.com/wp-content/uploads/2018/08/Grenade-Cover-new-680x1020.jpg" alt="Grenade book cover"></li>
+            <li><a href="https://cb-lee.com/books/sidekick-squad-series/not-your-sidekick/">Not Your Sidekick</a><br><img src="https://authorcblee.files.wordpress.com/2017/06/nys-cover1.jpg" alt="Not Your Sidekick book cover"></li>
+            <li><a href="https://cb-lee.com/books/sidekick-squad-series/not-your-sidekick/">Not Your Villain</a><br><img src="https://authorcblee.files.wordpress.com/2017/06/nys-cover1.jpg" alt="Not Your Villain book cover"></li>
         </ol>
         
         <div id="favorite">
             <h2>My Top 3 Favorite books:</h2>
             <ol id="top-3">
-                <li>The Hunger Games</li>
-                <li>A Wrinkle In Time</li>
-                <li>Warriors</li>
+                <li><a href="https://en.wikipedia.org/wiki/The_Hunger_Games">The Hunger Games</a></li>
+                <li><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FA_Wrinkle_in_Time_(2018_film)&psig=AOvVaw2_j0HCMnKRPoV2l1JafmRJ&ust=1597154231092000&source=images&cd=vfe&ved=0CAkQjhxqFwoTCLj3gKHlkOsCFQAAAAAdAAAAABAD">A Wrinkle In Time</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Warriors_(novel_series)">Warriors</a></li>
             </ol>
         </div>
         
-        <p id="footer">Reading Now: <br>Last Updated: 7/15/2020</p>
+        <p id="footer">Reading Now: The First Rule of Punk<br>Last Updated: 12/1/2020</p>
     </body>
 </html>
